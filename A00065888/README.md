@@ -31,7 +31,7 @@ Para el desarrollo de este proyecto se instaló y se trabajó sobre una máquina
 Una para LocalHost y otra para Adaptador Puente:  
 ![][2]  
 **2. Configuración de puertos**  
-Abrimos el puerto 8888 por el cual se configurará el servicio  
+Abrimos el puerto 5000 por el cual se configurará el servicio  
 ![][3]  
 **3. Configuración de otras dependencias**
 Iniciamos el servicio de SSH  
@@ -61,14 +61,15 @@ Ahora vamos al ambiente e instalamos Flask
  pip install flask
 ```  
 ![][6]  
+**5. Aplicación en Python**
 
 
 
 
 ## Referencias
-https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04
-
+* https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04  
+* https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04  
+* https://stackoverflow.com/questions/19267591/how-to-store-os-system-output-in-a-variable-or-a-list-in-python  
 
 [1]: images/ubuntuServer.JPG
 [2]: images/conftarjetared.JPG
@@ -76,3 +77,4 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-u
 [4]: images/sshstart.JPG
 [5]: images/virtualenv.JPG
 [6]: images/installflask.JPG
+[7]: images/service.JPG
