@@ -39,15 +39,28 @@ Iniciamos el servicio de SSH
 Cabe aclarar que lo habilitamos en caso de trabajar de manera remota, pero en este proyecto todo se hizo desde la misma máquina virtual  
 Ahora debemos instalar pip. Para esto ejecutamos los siguientes comandos:  
 ```
-$ sudo apt-get update
-$ sudo apt-get -y upgrade
+ sudo apt-get update
+ sudo apt-get -y upgrade
 ```  
 Verificamos que Python3 haya sido instalado e instalamos pip:  
 ```
-$ python3 -V
-$ sudo apt-get install -y python3-pip
+ python3 -V
+ sudo apt-get install -y python3-pip
 ```
-
+**4. Creación de ambientes virtuales**  
+Ahora procedemos a la creación de un ambiente virtual:  
+```
+ sudo pip3 install virtualenv 
+ virtualenv proyecto
+ source proyecto/bin/activate 
+```  
+![][5]  
+Ahora vamos al ambiente e instalamos Flask  
+```
+ source proyecto/bin/activate 
+ pip install flask
+```  
+![][6]  
 
 
 
@@ -61,3 +74,5 @@ https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-u
 [2]: images/conftarjetared.JPG
 [3]: images/firewallport.JPG
 [4]: images/sshstart.JPG
+[5]: images/virtualenv.JPG
+[6]: images/installflask.JPG
