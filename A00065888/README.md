@@ -18,8 +18,46 @@ Para el despliegue de una aplicación en un servidor se requiere conocer los pro
 
 El siguiente proyecto consiste en el despliegue de una aplicación web para obtener información del sistema operativo (La aplicación debe permitir consulta uso de CPU, memoria y espacio en disco). Para este propósito se debe emplear el sistema operativo Ubuntu Server 16.04, el microframework flask y ambientes virtuales.
 
+<p align="center">
+  <img src="images/vista-despliegue.png" alt="webservice architecture"/>
+</p>
+
 ## Desarrollo
+
+Para el desarrollo de este proyecto se instaló y se trabajó sobre una máquina virtual UbuntuServer 16.04  
+![][1]  
+**El proceso fue el siguiente:**  
+**1.Configuración de las interfaces de red**  
+Una para LocalHost y otra para Adaptador Puente:  
+![][2]  
+**2. Configuración de puertos**  
+Abrimos el puerto 8888 por el cual se configurará el servicio  
+![][3]  
+**3. Configuración de otras dependencias**
+Iniciamos el servicio de SSH  
+![][4]  
+Cabe aclarar que lo habilitamos en caso de trabajar de manera remota, pero en este proyecto todo se hizo desde la misma máquina virtual  
+Ahora debemos instalar pip. Para esto ejecutamos los siguientes comandos:  
+```
+$ sudo apt-get update
+$ sudo apt-get -y upgrade
+```  
+Verificamos que Python3 haya sido instalado e instalamos pip:  
+```
+$ python3 -V
+$ sudo apt-get install -y python3-pip
+```
+
+
+
+
 
 ## Referencias
 https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-16-04
+
+
+[1]: images/ubuntuServer.JPG
+[2]: images/conftarjetared.JPG
+[3]: images/firewallport.JPG
+[4]: images/sshstart.JPG
