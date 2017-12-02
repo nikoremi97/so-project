@@ -86,6 +86,7 @@ Ahora vamos al ambiente e instalamos Flask.
  pip install flask
 ```  
 ![][11]  
+
 **5. Aplicación en Python**  
 
 Se requiere realizar una apliación en Python para obtener la información del sistema operativo (La aplicación debe permitir consulta uso de CPU, memoria y espacio en disco).
