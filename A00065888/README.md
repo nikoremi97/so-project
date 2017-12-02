@@ -4,10 +4,11 @@
 **Curso:** Sistemas Operativos  
 **Docente:** Daniel Barragán C.  
 **Tema:**  Servicios web  
-**Correo:** daniel.barragan at correo.icesi.edu.co
-**Estudiantes:** Nicolás Recalde A00065888  
-                 Alejandro Bueno A00335472  
-                 Rubén Ceballos A00054636  
+**Correo:** daniel.barragan at correo.icesi.edu.co  
+**Estudiantes:**  
+Nicolás Recalde A00065888  
+Alejandro Bueno A00335472  
+Rubén Ceballos A00054636  
 
 ## Objetivos
 * Desplegar una aplicación en un servidor que ejecuta el sistema operativo Linux
@@ -76,7 +77,6 @@ Ahora procedemos a la creación de un ambiente virtual.
 ```
  sudo pip3 install virtualenv 
  virtualenv proyecto
- source proyecto/bin/activate 
 ```  
 ![][10]
 
@@ -114,7 +114,7 @@ Se realiza prueba del servicio mediante el comando curl.
 
 Por último, se valida la funcionalidad del servicio en un navegador Web (Chrome).
 
-
+![][20]
 
 ## Referencias
 * https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04  
@@ -140,3 +140,4 @@ Por último, se valida la funcionalidad del servicio en un navegador Web (Chrome
 [17]: images/so10.PNG
 [18]: images/so11.PNG
 [19]: images/so12.PNG
+[20]: images/so13.gif
